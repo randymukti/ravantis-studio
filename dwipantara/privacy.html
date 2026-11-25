@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dwipantara: Kebijakan Privasi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: tenang, resmi, ramah pemain
+   IDEA: lembar lontar keraton: daun lontar bergaris, cap emas kerajaan
+   PICTURE: lambang candi bertingkat emas di atas langit senja Nusantara
+   COLOUR and TYPE: coklat kayu tua, emas HUD game, krem lontar; Cinzel + Source Sans 3
+   LAYOUT: pita judul penuh, navigasi dua tab, dua bagian teks rapi selebar 70 karakter */
+:root{color-scheme:light dark;
+--bg:light-dark(#f6efe0,#17110b);--panel:light-dark(#fffaf0,#211810);--ink:light-dark(#2a1d10,#f1e6d2);
+--muted:light-dark(#6b5a45,#bfae94);--rule:light-dark(#e2d4b8,#3a2c1d);--gold:#c99a2e;--goldl:#fad161;--wood:#3b2414}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Sans 3",system-ui,sans-serif;overflow-x:clip}
+html{scroll-padding-top:72px}
+a{color:light-dark(#8a5a0b,var(--goldl))}
+.hero{background:linear-gradient(180deg,#2a1608 0%,#5a2e12 55%,#a8561c 100%);color:#fbecd0;padding:clamp(28px,5vw,64px) max(5vw,16px) 0;overflow:hidden}
+.hero-in{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:end}
+.hero h1{font:700 clamp(32px,5vw,50px)/1.05 Cinzel,serif;margin:0 0 10px;color:var(--goldl);text-wrap:balance}
+.hero p{margin:0 0 22px;max-width:46ch;color:#f3dcb4}
+.hero svg{width:100%;height:auto;display:block}
+nav{position:sticky;top:0;z-index:5;background:var(--wood);border-bottom:2px solid var(--gold)}
+nav .in{max-width:1040px;margin:0 auto;display:flex;gap:4px;padding:0 max(5vw,16px);flex-wrap:wrap}
+nav a{color:#f6e3bd;text-decoration:none;padding:13px 16px;min-height:44px;font-weight:600;border-bottom:3px solid transparent}
+nav a:hover,nav a:focus-visible{border-bottom-color:var(--goldl);outline:none;color:#fff}
+main{max-width:1040px;margin:0 auto;padding:clamp(24px,4vw,48px) max(5vw,16px)}
+section{background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:clamp(20px,3.5vw,40px);margin-bottom:28px}
+h2{font:700 clamp(26px,3.4vw,34px)/1.1 Cinzel,serif;margin:0 0 6px}
+h3{font-size:19px;margin:26px 0 6px}
+.meta{color:var(--muted);font-size:15px;margin:0 0 18px}
+p,li{max-width:70ch}
+ul{padding-left:1.2em}li{margin:4px 0}
+.contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center;background:light-dark(#f3e6c8,#2c2015);border-radius:10px;padding:14px 16px;margin:16px 0}
+.contact b{font-size:18px;overflow-wrap:anywhere}
+button{font:600 16px "Source Sans 3",sans-serif;min-height:44px;padding:0 18px;border-radius:8px;border:1px solid var(--gold);background:var(--gold);color:#1e1206;cursor:pointer}
+button:focus-visible{outline:3px solid var(--goldl);outline-offset:2px}
+details{border-top:1px solid var(--rule);padding:12px 0}
+summary{font-weight:600;cursor:pointer;min-height:32px}
+.en{border-top:2px dashed var(--rule);margin-top:30px;padding-top:8px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:8px 16px 40px}
+@media(max-width:600px){.hero-in{grid-template-columns:minmax(0,1fr)}.hero svg{max-width:320px;margin:0 auto}}
+@media(prefers-reduced-motion:no-preference){.sun{animation:glow 6s ease-in-out infinite alternate}@keyframes glow{to{opacity:.65}}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <h1>Dwipantara: Archipelago Kingdoms</h1>
+      <p>Bantuan pemain dan kebijakan privasi untuk game strategi kerajaan Nusantara dari Ravantis Studio.</p>
+    </div>
+    <svg viewBox="0 0 400 230" role="img" aria-label="Lambang candi emas di bawah matahari senja">
+      <defs>
+        <radialGradient id="sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient>
+        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#b9821f"/></linearGradient>
+        <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient>
+      </defs>
+      <circle class="sun" cx="200" cy="96" r="96" fill="url(#sun)"/>
+      <g id="tier">
+        <rect x="70" y="190" width="260" height="40" rx="3" fill="url(#g)"/>
+        <rect x="95" y="160" width="210" height="32" rx="3" fill="url(#g)"/>
+        <rect x="122" y="132" width="156" height="30" rx="3" fill="url(#g)"/>
+        <rect x="148" y="106" width="104" height="28" rx="3" fill="url(#g)"/>
+        <path d="M170 106 L200 44 L230 106 Z" fill="url(#g)"/>
+        <circle cx="200" cy="38" r="7" fill="#ffe9a8"/>
+      </g>
+      <rect x="70" y="44" width="260" height="186" fill="url(#sh)"/>
+      <g fill="#5a2e12" opacity=".55">
+        <rect x="188" y="200" width="24" height="30" rx="12"/>
+        <rect x="110" y="198" width="12" height="18" rx="6"/><rect x="278" y="198" width="12" height="18" rx="6"/>
+        <rect x="140" y="168" width="10" height="16" rx="5"/><rect x="250" y="168" width="10" height="16" rx="5"/>
+        <rect x="194" y="140" width="12" height="18" rx="6"/>
+      </g>
+      <path d="M0 230 Q60 214 120 226 T240 224 T400 222 V230 Z" fill="#2a1608"/>
+    </svg>
+  </div>
+</header>
+
+<nav aria-label="Bagian"><div class="in"><a href="support.html">Support</a><a href="privacy.html">Kebijakan Privasi</a></div></nav>
+
+<main>
+<section id="privacy">
+  <h2>Kebijakan Privasi</h2>
+  <p class="meta">Berlaku sejak 26 November 2026 · Pengembang: Randy Mukti (Ravantis Studio), Indonesia</p>
+  <p>Kebijakan ini menjelaskan bagaimana game Dwipantara: Archipelago Kingdoms ("game", "kami") menangani informasi kamu. Singkatnya: <b>kami tidak mengumpulkan data pribadi apa pun.</b></p>
+
+  <h3>Data yang kami kumpulkan</h3>
+  <p>Tidak ada. Game tidak meminta pendaftaran, tidak meminta nama asli, email, lokasi, kontak, foto, atau mikrofon, dan tidak mengirim data permainan ke server kami. Versi saat ini tidak memuat iklan, analitik, atau pelacak pihak ketiga.</p>
+
+  <h3>Data yang disimpan di perangkat</h3>
+  <p>Progres permainan, pengaturan, nama pemain yang kamu ketik, kampanye, dan pencapaian disimpan secara lokal di perangkat kamu. Data ini tidak dikirim ke kami dan akan terhapus saat aplikasi dihapus.</p>
+
+  <h3>Pembelian di dalam aplikasi</h3>
+  <p>Jika nanti tersedia pembelian di dalam aplikasi, pembayaran diproses sepenuhnya oleh Apple melalui App Store. Kami tidak menerima atau menyimpan informasi pembayaran kamu; kami hanya menerima konfirmasi dari Apple bahwa pembelian berhasil.</p>
+
+  <h3>Perubahan di masa depan</h3>
+  <p>Jika versi berikutnya menambahkan iklan, mode bermain online, atau fitur lain yang memproses data, kebijakan ini dan label privasi di App Store akan diperbarui sebelum fitur tersebut aktif, termasuk penjelasan data apa yang diproses, untuk apa, dan oleh pihak mana.</p>
+
+  <h3>Anak-anak</h3>
+  <p>Game ini tidak mengumpulkan data pribadi dari siapa pun, termasuk anak-anak.</p>
+
+  <h3>Kontak</h3>
+  <p>Pertanyaan tentang privasi dapat dikirim ke <b>dwipantaran@gmail.com</b>.</p>
+
+  <div class="en">
+    <h3>English summary</h3>
+    <p><b>We do not collect any personal data.</b> Dwipantara requires no account and sends no gameplay data to our servers. The current version contains no ads, analytics or third-party trackers. Progress, settings and the player name you type are stored only on your device and are deleted when you remove the app. Any future in-app purchases are processed entirely by Apple; we never receive your payment details. If a later version adds ads, online play or other data processing, this policy and the App Store privacy label will be updated before those features go live. Questions: dwipantaran@gmail.com. Effective 26 November 2026. Developer: Randy Mukti (Ravantis Studio), Indonesia.</p>
+  </div>
+</section>
+</main>
+<footer>© 2026 Randy Mukti · Ravantis Studio</footer>
+<script>
+{
+  for (const b of document.querySelectorAll('button[data-copy]')) {
+    b.addEventListener('click', async () => {
+      const t = document.getElementById(b.dataset.copy).textContent;
+      try { await navigator.clipboard.writeText(t); b.textContent = 'Tersalin'; }
+      catch (e) { b.textContent = 'Salin manual'; }
+      setTimeout(() => { b.textContent = 'Salin email'; }, 2000);
+    });
+  }
+}
+</script>
+</body>
+</html>
